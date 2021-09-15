@@ -33,19 +33,14 @@ class Solution:
         
         # 주의해야할 로마값이 있는지 확인
         # 있으면 제거
-        print("******************************")
         for i in range(len(s)):
             print(i)
             check_str = s[i:i+2]
             print(check_str)
             if check_str in roman_careful_dict:
                 answer += roman_careful_dict[check_str]
-                print(answer)
                 s = s.replace(check_str,"aa", 1)
-                print(s)
-                i = i-2
-            print("******************************")
-        print("******************************")         
+                i = i-2       
 
         
         for i in s:
