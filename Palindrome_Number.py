@@ -1,4 +1,4 @@
-# Problem9
+# Problem 9
 # 주어진 정수 x에 대하여 x가 palindrome 정수인지 판단하라.
 # palindrome 정수란, 그냥 읽어도, 거꾸로 읽어도 같은 값인 정수이다.
 # 다음은 예시이다.
