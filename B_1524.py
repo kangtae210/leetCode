@@ -14,17 +14,18 @@ for i in range(case):
 
     repeat = 0
     while True:
-        if s_people[0] < b_people[0]:
-            del s_people[0]
-        elif s_people[0] == b_people[0]:
-            del b_people[0]
         if len(s_people) == 0:
             print('B')
             break
         elif len(b_people) == 0:
             print('S')
             break
-        if repeat > s_count + b_count:
+        if s_people[0] < b_people[0]:
+            del s_people[0]
+        elif s_people[0] == b_people[0]:
+            del b_people[0]
+
+        if repeat >= s_count + b_count:
             print('C')
             break
         repeat += 1
