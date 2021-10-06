@@ -1,16 +1,3 @@
-# def solution(s):
-#     answer = ""
-#     for word in s.split():
-#         target = ""
-#         for index in range(len(word)):
-#             if index % 2 == 0:
-#                 target += word[index].upper()
-#             else:
-#                 target += word[index].lower()
-#         answer += target + " "
-
-#     return answer[:-1]
-
 def solution(s):
     index, move = 0,0
     answer = []
